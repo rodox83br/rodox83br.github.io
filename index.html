@@ -9,8 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css?v=20261103">
+  <style>
+    .hero-avatar-wrap { position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 18px; }
+    .avatar-ring { position: relative; padding: 4px; border-radius: 50%; background: linear-gradient(135deg, #38bdf8 0%, #078cff 38%, #0d2744 72%, #20a5ff 100%); box-shadow: 0 18px 42px rgba(2, 8, 16, .68), 0 0 28px rgba(7, 140, 255, .24); display: inline-flex; }
+    .avatar-frame { position: relative; border-radius: 50%; padding: 5px; background: #07111d; overflow: hidden; display: flex; }
+    .avatar-img { width: clamp(176px, 20vw, 224px); height: clamp(176px, 20vw, 224px); border-radius: 50%; object-fit: cover; object-position: center 28%; display: block; }
+  </style>
+  <script src="js/script.js?v=20261103" defer></script>
 </head>
 <body>
   <div class="ambient-noise" aria-hidden="true"></div>
