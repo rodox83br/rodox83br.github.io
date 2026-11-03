@@ -162,6 +162,12 @@ button:focus-visible {
   border-color: var(--blue2);
 }
 
+.social-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .social-top a {
   border: 1px solid #294057;
   background: rgba(16, 30, 46, .65);
@@ -449,10 +455,22 @@ h1 span {
   background: rgba(11, 23, 37, .94);
   border: 1px solid rgba(56, 189, 248, .32);
   box-shadow: 0 8px 20px rgba(0, 0, 0, .45);
-  font-size: 12px;
+  font-family: var(--mono);
+  font-size: 11.5px;
   font-weight: 600;
   color: #e3eef9;
   backdrop-filter: blur(10px);
+  transition: border-color .2s ease, transform .2s ease, color .2s ease;
+}
+
+.avatar-badge:hover {
+  border-color: var(--cyan);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.avatar-badge svg {
+  color: var(--cyan);
 }
 
 .avatar-badge-dot {
