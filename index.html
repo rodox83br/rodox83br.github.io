@@ -8,11 +8,13 @@
   <title>Rodolfo Bertini | Página pessoal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
+  <div class="ambient-noise" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio" aria-label="Rodolfo Bertini - início">
@@ -27,7 +29,11 @@
         <a href="#contato">Contato</a>
       </nav>
       <div class="social-top">
-        <a href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+        <a href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.92.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.98 10.98 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+          </svg>
+        </a>
       </div>
     </div>
   </header>
@@ -36,29 +42,108 @@
     <section class="hero" id="inicio">
       <div class="hero-image" aria-hidden="true"></div>
       <div class="container hero-content">
-        <p class="eyebrow">PÁGINA PESSOAL</p>
-        <p class="intro">Olá, eu sou</p>
-        <h1>Rodolfo <span>Bertini</span></h1>
-        <p class="hero-lead">Empresário, entusiasta de tecnologia e estudante de desenvolvimento FullStack.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">⌘ &nbsp; Ver projetos no GitHub</a>
-          <a class="button button-outline" href="#contato">✉ &nbsp; Entrar em contato</a>
+        <div class="hero-text">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>PÁGINA PESSOAL</p>
+          <p class="intro">Olá, eu sou</p>
+          <h1>Rodolfo <span>Bertini</span></h1>
+          <p class="hero-lead">Empresário, entusiasta de tecnologia e estudante de desenvolvimento FullStack.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.92.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.98 10.98 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+              <span>Ver projetos no GitHub</span>
+            </a>
+            <a class="button button-outline" href="#contato">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <span>Entrar em contato</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrap">
+          <div class="avatar-glow" aria-hidden="true"></div>
+          <div class="avatar-orbit" aria-hidden="true"></div>
+          <div class="avatar-orbit-inner" aria-hidden="true"></div>
+          <div class="avatar-ring">
+            <div class="avatar-frame">
+              <img class="avatar-img" src="assets/rodolfo-perfil.jpeg" alt="Foto de perfil de Rodolfo Bertini" width="224" height="224">
+            </div>
+          </div>
+          <div class="avatar-badge" aria-hidden="true">
+            <span class="avatar-badge-dot"></span>
+            <span class="avatar-badge-code">&lt;/&gt;</span>
+            <span>FullStack &amp; Tech</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="highlights">
+    <section class="highlights" aria-label="Áreas de atuação">
       <div class="container highlight-grid">
-        <article class="highlight"><span class="highlight-icon">▣</span><div><h3>Empresário</h3><p>Gestão e operação de negócios no food service.</p></div></article>
-        <article class="highlight"><span class="highlight-icon">&lt;/&gt;</span><div><h3>Desenvolvedor</h3><p>Em formação FullStack (JavaScript/TypeScript).</p></div></article>
-        <article class="highlight"><span class="highlight-icon">▱</span><div><h3>Infraestrutura</h3><p>Linux, Docker, servidores e automação.</p></div></article>
-        <article class="highlight"><span class="highlight-icon">◇</span><div><h3>Maker</h3><p>Entusiasta de impressão 3D e projetos DIY.</p></div></article>
+        <article class="highlight reveal">
+          <span class="highlight-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </span>
+          <div>
+            <h3>Empresário</h3>
+            <p>Gestão e operação de negócios no food service.</p>
+          </div>
+        </article>
+        <article class="highlight reveal">
+          <span class="highlight-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </span>
+          <div>
+            <h3>Desenvolvedor</h3>
+            <p>Em formação FullStack (JavaScript/TypeScript).</p>
+          </div>
+        </article>
+        <article class="highlight reveal">
+          <span class="highlight-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+              <line x1="6" y1="6" x2="6.01" y2="6"/>
+              <line x1="6" y1="18" x2="6.01" y2="18"/>
+            </svg>
+          </span>
+          <div>
+            <h3>Infraestrutura</h3>
+            <p>Linux, Docker, servidores e automação.</p>
+          </div>
+        </article>
+        <article class="highlight reveal">
+          <span class="highlight-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </span>
+          <div>
+            <h3>Maker</h3>
+            <p>Entusiasta de impressão 3D e projetos DIY.</p>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="content-section container">
-      <div class="about" id="sobre">
-        <h2>Sobre mim</h2>
+      <div class="about reveal" id="sobre">
+        <div class="section-header">
+          <span class="section-tag">01 // PERFIL</span>
+          <h2>Sobre mim</h2>
+        </div>
         <p>Sou administrador, empreendedor no setor de alimentação e apaixonado por tecnologia. Estou em constante evolução no desenvolvimento FullStack, explorando também infraestrutura, automação e projetos maker.</p>
         <ul class="check-list">
           <li>Administrador de Empresas</li>
@@ -67,46 +152,113 @@
           <li>Entusiasta de Linux, Docker e automação</li>
           <li>Hobby com impressão 3D e projetos DIY</li>
         </ul>
+        <div class="about-telemetry">
+          <div class="telemetry-item">
+            <span class="telemetry-label">FOCO ATUAL</span>
+            <span class="telemetry-value">FullStack Web &amp; Automação</span>
+          </div>
+          <div class="telemetry-item">
+            <span class="telemetry-label">AMBIENTE</span>
+            <span class="telemetry-value">Linux · Docker · Proxmox</span>
+          </div>
+        </div>
       </div>
 
       <div class="right-column">
-        <section id="tecnologias">
-          <h2>Tecnologias e interesses</h2>
+        <section id="tecnologias" class="reveal">
+          <div class="section-header">
+            <span class="section-tag">02 // STACK</span>
+            <h2>Tecnologias e interesses</h2>
+          </div>
           <div class="tech-grid">
             <span class="tech"><b class="tech-js">JS</b> JavaScript</span>
             <span class="tech"><b class="tech-ts">TS</b> TypeScript</span>
             <span class="tech"><b class="tech-node">⬡</b> Node.js</span>
             <span class="tech"><b class="tech-next">N</b> Next.js</span>
             <span class="tech"><b class="tech-docker">▦</b> Docker</span>
-            <span class="tech"><b class="tech-db">🐘</b> PostgreSQL</span>
-            <span class="tech"><b class="tech-redis">≋</b> Redis</span>
-            <span class="tech"><b class="tech-linux">🐧</b> Linux</span>
+            <span class="tech"><b class="tech-db">SQL</b> PostgreSQL</span>
+            <span class="tech"><b class="tech-redis">KV</b> Redis</span>
+            <span class="tech"><b class="tech-linux">$</b> Linux</span>
             <span class="tech"><b class="tech-git">⑂</b> Git</span>
-            <span class="tech"><b class="tech-py">⌘</b> Proxmox / ZFS</span>
+            <span class="tech"><b class="tech-py">VE</b> Proxmox / ZFS</span>
           </div>
         </section>
 
-        <section id="projetos" class="projects-section">
-          <h2>Projetos e áreas de interesse</h2>
+        <section id="projetos" class="projects-section reveal">
+          <div class="section-header">
+            <span class="section-tag">03 // LAB &amp; PROJETOS</span>
+            <h2>Projetos e áreas de interesse</h2>
+          </div>
           <div class="project-grid">
             <article class="project-card">
-              <span class="project-icon">▤</span>
+              <div class="project-card-top">
+                <span class="project-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                    <line x1="6" y1="6" x2="6.01" y2="6"/>
+                    <line x1="6" y1="18" x2="6.01" y2="18"/>
+                  </svg>
+                </span>
+                <span class="project-index">SYS.01</span>
+              </div>
               <h3>Homelab / Servidores</h3>
               <p>Infraestrutura com Proxmox, ZFS, Docker, serviços self-hosted e automações.</p>
             </article>
             <article class="project-card">
-              <span class="project-icon">▥</span>
+              <div class="project-card-top">
+                <span class="project-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </span>
+                <span class="project-index">DAT.02</span>
+              </div>
               <h3>Dados e dashboards</h3>
               <p>Análises de vendas, entregas e performance com SQL e ferramentas de visualização.</p>
             </article>
             <article class="project-card">
-              <span class="project-icon">◇</span>
+              <div class="project-card-top">
+                <span class="project-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  </svg>
+                </span>
+                <span class="project-index">MKR.03</span>
+              </div>
               <h3>Projetos Maker</h3>
               <p>Impressão 3D, Arduino, ESP32 e experimentos com automação.</p>
             </article>
           </div>
-          <p class="section-note">Mais projetos e repositórios no <a href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">meu GitHub</a>.</p>
+          <p class="section-note">Mais projetos e repositórios no <a href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">meu GitHub →</a></p>
         </section>
+      </div>
+    </section>
+
+    <section class="contact-banner container reveal" aria-label="Contato">
+      <div class="contact-card">
+        <div class="contact-text">
+          <span class="section-tag">04 // CONEXÃO</span>
+          <h2>Vamos conversar ou trocar ideias?</h2>
+          <p>Aberto a conexões sobre desenvolvimento FullStack, homelab, automação e tecnologia.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:rodolfobr.dev@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span>Enviar e-mail</span>
+          </a>
+          <a class="button button-outline" href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.92.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.98 10.98 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -117,7 +269,7 @@
       <p>Empreendedor <span>·</span> Desenvolvedor <span>·</span> Entusiasta de Tecnologia</p>
       <div class="footer-links">
         <a href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="mailto:">E-mail</a>
+        <a href="mailto:rodolfobr.dev@gmail.com">E-mail</a>
       </div>
     </div>
   </footer>
