@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111d">
+  <meta name="description" content="Página pessoal de Rodolfo Bertini — empreendedor, entusiasta de tecnologia e estudante de desenvolvimento FullStack.">
+  <title>Rodolfo Bertini | Página pessoal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Rodolfo Bertini - início">
+        <span class="brand-mark">&lt;/&gt;</span><span>Rodolfo Bertini</span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="social-top">
+        <a href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">PÁGINA PESSOAL</p>
+        <p class="intro">Olá, eu sou</p>
+        <h1>Rodolfo <span>Bertini</span></h1>
+        <p class="hero-lead">Empresário, entusiasta de tecnologia e estudante de desenvolvimento FullStack.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">⌘ &nbsp; Ver projetos no GitHub</a>
+          <a class="button button-outline" href="#contato">✉ &nbsp; Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="container highlight-grid">
+        <article class="highlight"><span class="highlight-icon">▣</span><div><h3>Empresário</h3><p>Gestão e operação de negócios no food service.</p></div></article>
+        <article class="highlight"><span class="highlight-icon">&lt;/&gt;</span><div><h3>Desenvolvedor</h3><p>Em formação FullStack (JavaScript/TypeScript).</p></div></article>
+        <article class="highlight"><span class="highlight-icon">▱</span><div><h3>Infraestrutura</h3><p>Linux, Docker, servidores e automação.</p></div></article>
+        <article class="highlight"><span class="highlight-icon">◇</span><div><h3>Maker</h3><p>Entusiasta de impressão 3D e projetos DIY.</p></div></article>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="about" id="sobre">
+        <h2>Sobre mim</h2>
+        <p>Sou administrador, empreendedor no setor de alimentação e apaixonado por tecnologia. Estou em constante evolução no desenvolvimento FullStack, explorando também infraestrutura, automação e projetos maker.</p>
+        <ul class="check-list">
+          <li>Administrador de Empresas</li>
+          <li>Gestão de negócios e operação de food service</li>
+          <li>Estudante de desenvolvimento FullStack</li>
+          <li>Entusiasta de Linux, Docker e automação</li>
+          <li>Hobby com impressão 3D e projetos DIY</li>
+        </ul>
+      </div>
+
+      <div class="right-column">
+        <section id="tecnologias">
+          <h2>Tecnologias e interesses</h2>
+          <div class="tech-grid">
+            <span class="tech"><b class="tech-js">JS</b> JavaScript</span>
+            <span class="tech"><b class="tech-ts">TS</b> TypeScript</span>
+            <span class="tech"><b class="tech-node">⬡</b> Node.js</span>
+            <span class="tech"><b class="tech-next">N</b> Next.js</span>
+            <span class="tech"><b class="tech-docker">▦</b> Docker</span>
+            <span class="tech"><b class="tech-db">🐘</b> PostgreSQL</span>
+            <span class="tech"><b class="tech-redis">≋</b> Redis</span>
+            <span class="tech"><b class="tech-linux">🐧</b> Linux</span>
+            <span class="tech"><b class="tech-git">⑂</b> Git</span>
+            <span class="tech"><b class="tech-py">⌘</b> Proxmox / ZFS</span>
+          </div>
+        </section>
+
+        <section id="projetos" class="projects-section">
+          <h2>Projetos e áreas de interesse</h2>
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="project-icon">▤</span>
+              <h3>Homelab / Servidores</h3>
+              <p>Infraestrutura com Proxmox, ZFS, Docker, serviços self-hosted e automações.</p>
+            </article>
+            <article class="project-card">
+              <span class="project-icon">▥</span>
+              <h3>Dados e dashboards</h3>
+              <p>Análises de vendas, entregas e performance com SQL e ferramentas de visualização.</p>
+            </article>
+            <article class="project-card">
+              <span class="project-icon">◇</span>
+              <h3>Projetos Maker</h3>
+              <p>Impressão 3D, Arduino, ESP32 e experimentos com automação.</p>
+            </article>
+          </div>
+          <p class="section-note">Mais projetos e repositórios no <a href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">meu GitHub</a>.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="container footer-content">
+      <a class="brand" href="#inicio"><span class="brand-mark">&lt;/&gt;</span><span>Rodolfo Bertini</span></a>
+      <p>Empreendedor <span>·</span> Desenvolvedor <span>·</span> Entusiasta de Tecnologia</p>
+      <div class="footer-links">
+        <a href="https://github.com/rodolfobertini" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:">E-mail</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
